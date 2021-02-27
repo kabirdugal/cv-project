@@ -107,7 +107,6 @@ class Body extends React.Component {
                         deleteItem={this.deleteWork} 
                     />
                 </div>
-                
             </div>
         )
     }

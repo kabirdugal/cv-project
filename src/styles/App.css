@@ -171,8 +171,12 @@ p {
 }
 
 /* Work Info Section */
+.add-work-btn {
+    
+}
 .work-info-container {
     margin: 40px;
+    margin-top: 120px;
     text-align: left;
 }
 

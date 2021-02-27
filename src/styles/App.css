@@ -1,0 +1,64 @@
+.main {
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    
+}
+
+/* Personal Info Section */
+.personal-info-container {
+    margin: 40px;
+}
+
+.mode-switch-btn {
+    margin: 20px;
+}
+
+.pi-input-name-container {
+    border: 1px solid red;
+}
+
+.pi-input-personal-subinfo-container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.pi-input-personal-subinfo-left {
+    float: left;
+}
+
+.pi-input-personal-subinfo-right {
+    float: right;
+}
+
+.pi-display-name-container {
+    border: 1px solid green;
+}
+
+.pi-display-personal-subinfo-container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.pi-display-personal-subinfo-left {
+    float: left;
+}
+
+.pi-display-personal-subinfo-right {
+    float: right;
+}
+
+/* Educational Info Section */
+.education-info-container {
+    margin: 40px;
+    text-align: left;
+}
+
+
+/* Work Info Section */
+.work-info-container {
+    margin: 40px;
+    text-align: left;
+}

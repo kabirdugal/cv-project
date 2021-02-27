@@ -70,18 +70,42 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div>
-                <button className="mode-switch-btn" onClick={this.handleMode}>Submit</button>
+            <div className="cv-container">
+                <button 
+                    className="mode-switch-btn" 
+                    onClick={this.handleMode}
+                >Submit</button>
+
                 <div className="personal-info-container">
                     <PersonalInfo editMode={this.state.editMode} />
                 </div>
-                <button className="add-education-btn" onClick={this.handleEducation} style={{visibility: "visible"}}>Add Education</button>
+                
+                <button 
+                    className="add-education-btn" 
+                    onClick={this.handleEducation} 
+                    style={{visibility: "visible"}}
+                >Add Education</button>
+                
                 <div className="education-info-container">
-                    <EducationOverview schoolArray={this.state.schoolArray} editMode={this.state.editMode} deleteItem={this.deleteEducation}/>
+                    <EducationOverview 
+                        schoolArray={this.state.schoolArray} 
+                        editMode={this.state.editMode} 
+                        deleteItem={this.deleteEducation}
+                    />
                 </div>
-                <button className="add-work-btn" onClick={this.handleWork} style={{visibility: "visible"}}>Add Work Experience</button>
+
+                <button 
+                    className="add-work-btn" 
+                    onClick={this.handleWork} 
+                    style={{visibility: "visible"}}
+                >Add Work Experience</button>
+
                 <div className="work-info-container">
-                    <WorkOverview workArray={this.state.workArray} editMode={this.state.editMode} deleteItem={this.deleteWork} />
+                    <WorkOverview 
+                        workArray={this.state.workArray} 
+                        editMode={this.state.editMode} 
+                        deleteItem={this.deleteWork} 
+                    />
                 </div>
                 
             </div>

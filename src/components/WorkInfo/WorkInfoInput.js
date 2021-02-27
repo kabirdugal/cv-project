@@ -73,8 +73,7 @@ function WorkInfoInput(props) {
                 <label>Description:
                     <textarea
                         name="description"
-                        rows="10"
-                        cols="30"
+                        rows="7"
                         value={props.workInfo.description}
                         onChange={props.changeHandler} 
                     />

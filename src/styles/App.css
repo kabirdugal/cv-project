@@ -1,64 +1,197 @@
+body {
+    background-color: dodgerblue;
+}
+
 .main {
     text-align: center;
-    display: flexbox;
-    flex-direction: column;
-    
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 5px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+input:hover {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    padding: 10px;
+    margin: 5px 5px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+select:hover {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+textarea {
+    resize: none;
+    width:100%;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 10px solid #eee;;
+    border: none;
+}
+
+textarea:hover {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+hr {
+    width: 100%;
+}
+
+p {
+    
+    margin: 2px;
+}
+
+
+
 
 /* Personal Info Section */
 .personal-info-container {
-    margin: 40px;
+   padding-right: 41px;
 }
 
 .mode-switch-btn {
-    margin: 20px;
+    margin: 10px;
 }
 
 .pi-input-name-container {
-    border: 1px solid red;
+   
 }
 
 .pi-input-personal-subinfo-container {
-    width: 600px;
+    width: 100%;
     margin: auto;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .pi-input-personal-subinfo-left {
     float: left;
+    
 }
 
 .pi-input-personal-subinfo-right {
     float: right;
+    text-align: right;
 }
 
 .pi-display-name-container {
-    border: 1px solid green;
 }
 
 .pi-display-personal-subinfo-container {
-    width: 600px;
+    width: auto;
     margin: auto;
-    padding: 20px;
 }
 
 .pi-display-personal-subinfo-left {
     float: left;
+    text-align: left;
+    margin-left: 40px;
 }
 
 .pi-display-personal-subinfo-right {
     float: right;
+    text-align: right;
 }
 
 /* Educational Info Section */
+.add-education-btn {
+    margin-top: 50px;
+}
+
 .education-info-container {
     margin: 40px;
     text-align: left;
 }
 
+.edu-delete-btn-container {
+    text-align: right;
+}
+
+.edu-delete-btn {
+    background-color: tomato;
+}
+
+.edu-delete-btn:hover {
+    background-color: lightcoral;
+}
+
+.ei-main-info-container {
+}
+
+.ei-display-school-name-container {
+    margin-top: -30px;
+}
+
+.education-element {
+    margin-bottom: 10px;
+}
 
 /* Work Info Section */
 .work-info-container {
     margin: 40px;
     text-align: left;
+}
+
+.work-delete-btn-container {
+    text-align: right;
+}
+
+.work-delete-btn {
+    background-color: tomato;
+}
+
+.work-delete-btn:hover {
+    background-color: lightcoral;
+}
+
+.wi-display-work-name-container {
+    
+}
+
+.work-element {
+    margin-top: -100px;
 }

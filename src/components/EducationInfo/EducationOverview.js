@@ -6,18 +6,21 @@ function EducationOverview(props) {
     const {schoolArray} = props
 
     return (
-        <div>
+        <div className="education-element">
             {props.schoolArray.map(eduItem => {
                 return <div key={eduItem}>
                     <EducationInfo 
                         editMode={props.editMode}
                     />
-                    <button 
-                        className="edu-delete-btn" 
-                        name={schoolArray.indexOf(eduItem)} 
-                        onClick={props.deleteItem} 
-                        style={{visibility: "visible"}}
-                    >Delete Education</button>
+                    <div className="edu-delete-btn-container">
+                        <button 
+                            className="edu-delete-btn" 
+                            name={schoolArray.indexOf(eduItem)} 
+                            onClick={props.deleteItem} 
+                            style={{visibility: "visible"}}
+                        >Delete</button>
+                    </div>
+                    
                 </div>
             })}
         </div>
